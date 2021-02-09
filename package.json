@@ -1,0 +1,21 @@
+{
+  "name": "crunchbites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/styles.css -o public/styles.css"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.5",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.1"
+  }
+}
