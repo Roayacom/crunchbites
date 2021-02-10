@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrunchBites</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="flex flex-wrap items-center justify-between p-6 bg-browngray">
-<img src="img/logo3.png" alt="CrunchBites"/>
+    <header class="bg-browngray opacity-90">
 
-<div class="flex ">
-<a href="index.html" class="text-white">Home</a>
+        <nav class="flex items-center justify-between p-4 ">
+            <div>
+                <img src="img/logo3.png" alt="CrunchBites"  class="w-32 h-auto lg:w-auto lg:h-auto" />
+            </div>
+           
+     
+    <div id="nav-content" class="hidden lg:flex space-x-4 lg:block p-4">
+        <a href="#" class="block text-white font-semibold">Home</a>
+        <a href="#" class="block text-white font-semibold">Restaurants</a>
+    </div>
 
-</div>
+        <div  class="flex space-x-4">
+            <a href="#" class="mx-4"> <img src="img/cart.png" alt="Cart"></a>
+            <a href="#" class="text-white">Roaya</a>
+
+        </div>
 
     </nav>
-    
+    <div class=" block lg:hidden px-6 pb-2">
+        <button id="nav-toggle" type="button" class="text-white">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+            </svg>
+        </button>
+    </div>
+
+</header>
+<div id="nav-dropdown" class="hidden bg-browngray opacity-95 w-32 mx-4  px-2 ">
+    <a href="#" class="pt-2 block text-white font-semibold">Home</a>
+        <a href="#" class=" py-2 block text-white font-semibold">Restaurants</a>  
+</div>
+
+        <script>
+            //Javascript to toggle the menu
+            document.getElementById('nav-toggle').onclick = function(){
+               document.getElementById("nav-dropdown").classList.toggle("hidden");
+            }
+        </script>
 </body>
+
 </html>
