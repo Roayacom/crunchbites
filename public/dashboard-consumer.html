@@ -17,7 +17,7 @@
             </div>
            
      
-    <div id="nav-content" class="hidden lg:flex space-x-4 lg:block p-4">
+    <div id="nav-content" class="hidden lg:flex md:flex space-x-4 lg:block md:block p-4">
         <a href="#" class="block text-white font-semibold">Home</a>
         <a href="#" class="block text-white font-semibold">Restaurants</a>
     </div>
@@ -29,7 +29,7 @@
         </div>
 
     </nav>
-    <div class=" block lg:hidden px-6 pb-2">
+    <div class=" block lg:hidden md:hidden px-6 pb-2">
         <button id="nav-toggle" type="button" class="text-white">
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path
@@ -44,12 +44,22 @@
         <a href="#" class=" py-2 block text-white font-semibold">Restaurants</a>  
 </div>
 
-        <script>
-            //Javascript to toggle the menu
-            document.getElementById('nav-toggle').onclick = function(){
-               document.getElementById("nav-dropdown").classList.toggle("hidden");
-            }
-        </script>
+<div class="grid p-6 ">
+
+<article class="flex border border-orangishred rounded items-center mb-4">
+<div class="w-1/6 border-r border-orangishred"><img src="img/McDonald's-Logo.png" alt=""></div>
+<div class="w-full"><h1>Delivered</h1></div>
+<div class="w-1/6"><h1>$20</h1></div>
+</article>
+
+<article class="flex border border-orangishred rounded items-center ">
+    <div class="w-1/6 border-r border-orangishred"><img src="img/McDonald's-Logo.png" alt=""></div>
+    <div class="w-full"><h1>Delivered</h1></div>
+    <div class="w-1/6"><h1>$20</h1></div>
+    </article>
+</div>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
