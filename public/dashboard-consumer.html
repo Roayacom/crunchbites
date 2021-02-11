@@ -9,57 +9,100 @@
 </head>
 
 <body>
-    <header class="bg-browngray opacity-90">
+    <div class="flex flex-col h-screen justify-between">
+        <header class="bg-browngray opacity-90">
 
-        <nav class="flex items-center justify-between p-4 ">
-            <div>
-                <img src="img/logo3.png" alt="CrunchBites"  class="w-32 h-auto lg:w-auto lg:h-auto" />
+            <nav class="flex items-center justify-between p-4 ">
+                <div class="flex items-center">
+                    <div>
+                        <img src="img/logo3.png" alt="CrunchBites" class="w-32 h-auto md:w-auto md:h-auto ml-6" />
+                    </div>
+
+
+                    <div id="nav-content"
+                        class="hidden lg:flex md:flex content-start space-x-6 lg:block md:block p-4 mx-12">
+                        <a href="#" class="block text-white font-semibold">Home</a>
+                        <a href="#" class="block text-white font-semibold pr-70">Restaurants</a>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 ">
+                    <a href="#" class=""> <img src="img/cart.png " alt="Cart"></a>
+                    <a href="#" class="text-white pr-28 md:pr-6">Roaya</a>
+                    <div class=" block lg:hidden md:hidden pb-2">
+                        <button id="nav-toggle" type="button" class="text-white">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </nav>
+
+
+        </header>
+        <div>
+            <div id="nav-dropdown" class="hidden float-right bg-browngray opacity-95 w-32 mx-4  px-2 ">
+                <a href="#" class="pt-2 block text-white font-semibold">Home</a>
+                <a href="#" class=" py-2 block text-white font-semibold">Restaurants</a>
             </div>
-           
-     
-    <div id="nav-content" class="hidden lg:flex md:flex space-x-4 lg:block md:block p-4">
-        <a href="#" class="block text-white font-semibold">Home</a>
-        <a href="#" class="block text-white font-semibold">Restaurants</a>
-    </div>
-
-        <div  class="flex space-x-4">
-            <a href="#" class="mx-4"> <img src="img/cart.png" alt="Cart"></a>
-            <a href="#" class="text-white">Roaya</a>
-
         </div>
 
-    </nav>
-    <div class=" block lg:hidden md:hidden px-6 pb-2">
-        <button id="nav-toggle" type="button" class="text-white">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                <path
-                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
-            </svg>
-        </button>
+
+        <div class="grid mx-auto md:w-4/6 p-6 ">
+            <h1 class="pb-4 text-lg text-orangishred-800 font-semibold">Order history</h1>
+            <article class="flex border border-orangishred rounded items-center mb-4">
+                <div class="w-32 "><img src="img/McDonald's-Logo.png" class="w-full " alt=""></div>
+                <div class="flex justify-between items-center w-full pr-6">
+                    <div class=" px-4  border-l border-orangishred">
+                        <h2 class="text-browngray font-bold py-4">McDonald's</h2>
+                        <p class="text-browngray text-xs pb-1">Delivered</p>
+                        <p class="text-browngray text-xs pb-4">Feb 1, 2021 06:00 AM</p>
+                    </div>
+                    <div class="">
+                        <h1 class="text-browngray font-bold">$20.00</h1>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex border border-orangishred rounded items-center mb-4">
+                <div class="w-32 "><img src="img/al-tazaj-mdiq.png" class="w-full " alt=""></div>
+                <div class="flex justify-between items-center w-full pr-6">
+                    <div class=" px-4  border-l border-orangishred">
+                        <h2 class="text-browngray font-bold py-4">McDonald's</h2>
+                        <p class="text-browngray text-xs pb-1">Delivered</p>
+                        <p class="text-browngray text-xs pb-4">Feb 1, 2021 06:00 AM</p>
+                    </div>
+                    <div class="">
+                        <h1 class="text-browngray font-bold">$20.00</h1>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex border border-orangishred rounded items-center mb-4">
+                <div class="w-32 "><img src="img/McDonald's-Logo.png" class="w-full " alt=""></div>
+                <div class="flex justify-between items-center w-full pr-6">
+                    <div class=" px-4  border-l border-orangishred">
+                        <h2 class="text-browngray font-bold py-4">McDonald's</h2>
+                        <p class="text-browngray text-xs pb-1">Delivered</p>
+                        <p class="text-browngray text-xs pb-4">Feb 1, 2021 06:00 AM</p>
+                    </div>
+                    <div class="">
+                        <h1 class="text-browngray font-bold">$20.00</h1>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer class="bg-beigeyellow opacity-50 p-6 text-orangishred text-sm font-semibold">
+            <p>Copyright (c) CrunchBites 2021</p>
+        </footer>
     </div>
 
-</header>
-<div id="nav-dropdown" class="hidden bg-browngray opacity-95 w-32 mx-4  px-2 ">
-    <a href="#" class="pt-2 block text-white font-semibold">Home</a>
-        <a href="#" class=" py-2 block text-white font-semibold">Restaurants</a>  
-</div>
-
-<div class="grid p-6 ">
-
-<article class="flex border border-orangishred rounded items-center mb-4">
-<div class="w-1/6 border-r border-orangishred"><img src="img/McDonald's-Logo.png" alt=""></div>
-<div class="w-full"><h1>Delivered</h1></div>
-<div class="w-1/6"><h1>$20</h1></div>
-</article>
-
-<article class="flex border border-orangishred rounded items-center ">
-    <div class="w-1/6 border-r border-orangishred"><img src="img/McDonald's-Logo.png" alt=""></div>
-    <div class="w-full"><h1>Delivered</h1></div>
-    <div class="w-1/6"><h1>$20</h1></div>
-    </article>
-</div>
-
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
