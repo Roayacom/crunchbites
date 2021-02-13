@@ -9,8 +9,11 @@
 </head>
 
 <body>
-    <div class="flex flex-col h-screen justify-between">
-        <header class="bg-browngray opacity-90">
+    
+    <div id="bodypage" class="flex flex-col h-screen justify-between">
+
+
+        <header id="header" class="bg-browngray ">
 
             <nav class="flex items-center justify-between p-4 ">
                 <div class="flex items-center">
@@ -21,8 +24,8 @@
 
                     <div id="nav-content"
                         class="hidden lg:flex md:flex content-start space-x-6 lg:block md:block p-4 mx-12">
-                        <a href="#" class="block text-white font-semibold">Home</a>
-                        <a href="#" class="block text-white font-semibold pr-70">Restaurants</a>
+                        <a href="#" class="block text-gray-300 font-semibold hover:bg-browngray-800 hover:text-white px-3 py-2 rounded">Home</a>
+                        <a href="#" class="block text-gray-300 font-semibold hover:bg-browngray-800 hover:text-white px-3 py-2  rounded  pr-70">Restaurants</a>
                     </div>
                 </div>
 
@@ -45,12 +48,14 @@
 
 
         </header>
-        <div>
-            <div id="nav-dropdown" class="hidden float-right bg-browngray opacity-95 w-32 mx-4  px-2 ">
-                <a href="#" class="pt-2 block text-white font-semibold">Home</a>
-                <a href="#" class=" py-2 block text-white font-semibold">Restaurants</a>
-            </div>
-        </div>
+      
+      
+
+
+
+     
+
+
 
 
         <div class="grid mx-auto md:w-4/6 p-6 ">
@@ -97,9 +102,17 @@
                 </div>
             </article>
         </div>
+      
         <footer class="bg-beigeyellow opacity-50 p-6 text-orangishred text-sm font-semibold">
-            <p>Copyright (c) CrunchBites 2021</p>
+            <p>Copyright © CrunchBites 2021</p>
         </footer>
+    </div>
+
+    <div>
+        <div id="nav-dropdown" class="hidden absolute bg-browngray-200  w-36 h-screen  pt-12 px-3 right-0 top-0 ">
+            <a href="#" class=" block text-gray-300 font-semibold hover:bg-browngray hover:text-white px-3 py-4 rounded">Home</a>
+            <a href="#" class=" block text-gray-300 font-semibold hover:bg-browngray hover:text-white px-3 py-4  rounded">Restaurants</a>
+        </div>
     </div>
 
     <script src="app.js"></script>
