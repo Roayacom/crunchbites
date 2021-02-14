@@ -6,6 +6,13 @@ module.exports = {
 
     extend: {
 
+
+      backgroundImage: {
+  
+        'hero-lg': "url('/public/img/hero-lg.jpg')",
+        'hero-sm': "url('/public/img/hero-sm.jpg')",
+       },
+
       colors:{
     
         orangishred:{
@@ -25,6 +32,12 @@ browngray:{
         200:'#F8E3C9',
         DEFAULT:'#EDB672',
         800:'#E59738',
+      },
+
+      beigeyellow:{
+     
+        DEFAULT:'#F1DE95',
+    
       }
 
       },

@@ -1,11 +1,9 @@
 {
   "name": "crunchbites",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "postcss src/styles.css -o public/styles.css"
-    
   },
   "keywords": [],
   "author": "",
@@ -17,5 +15,14 @@
   },
   "devDependencies": {
     "postcss-cli": "^8.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roayacom/crunchbites.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Roayacom/crunchbites/issues"
+  },
+  "homepage": "https://github.com/Roayacom/crunchbites#readme",
+  "description": ""
 }
